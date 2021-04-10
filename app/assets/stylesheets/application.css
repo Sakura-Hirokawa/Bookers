@@ -24,7 +24,7 @@ body{
   margin: 33px;
 }
 
-.h1{
+h1{
   display: block;
   font-size: 2em;
   margin-block-start: 0.67em;
@@ -162,19 +162,4 @@ label{
 #error_explanation ul li{
   font-size: 12px;
   list-style: square;
-}
-
-::marker{
-  unicode-bidi: isolate;
-  font-variant-numeric: tabular-nums;
-  text-transform: none;
-  text-indent: 0px !important;
-  text-align: start !important;
-  text-align-last: start !important;
-}
-
-.field_with_eroors{
-  padding:2px;
-  background-color:red;
-  display: table;
 }
