@@ -114,6 +114,31 @@ div{
   display: block;
 }
 
+div.field,div.actions{
+  margin-bottom: 10px;
+}
+
+ul{
+  display: block;
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+label{
+  display: block;
+  cursor: default;
+}
+
+/*eroor*/
 #error_explanation{
   width: 450px;
   border:2px solid red;
@@ -134,23 +159,9 @@ div{
   color: #fff;
 }
 
-div.field,div.actions{
-  margin-bottom: 10px;
-}
-
-ul{
-  display: block;
-  list-style: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-li{
-  display: list-item;
-  text-align: -webkit-match-parent;
+#error_explanation ul li{
+  font-size: 12px;
+  list-style: square;
 }
 
 ::marker{
@@ -162,7 +173,8 @@ li{
   text-align-last: start !important;
 }
 
-label{
-  display: block;
-  cursor: default;
+.field_with_eroors{
+  padding:2px;
+  background-color:red;
+  display: table;
 }
